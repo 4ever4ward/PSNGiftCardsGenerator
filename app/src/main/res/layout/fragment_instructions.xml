@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_part_1"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_part_2"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_part_3"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_part_4"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_part_5"
+        android:textColor="@android:color/white" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/edit_text_background"
+        android:paddingBottom="8dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="35dp"
+        android:paddingTop="8dp"
+        android:text="@string/instructions_part_6"
+        android:textColor="@android:color/white" />
+
+
+</LinearLayout>

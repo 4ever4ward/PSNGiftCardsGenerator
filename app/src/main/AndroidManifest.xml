@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.gnnsnowszerro.psngiftcardsgenerator">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <permission android:name="android.permission.READ_PHONE_STATE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label=""
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+        <activity
+            android:name=".GenerateActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/MainTheme" />
+
+
+        <!--Nativex activities___________________________________________________-->
+        <activity
+            android:name="com.nativex.monetization.activities.InterstitialActivity"
+            android:configChanges="orientation|screenSize"
+            android:hardwareAccelerated="true"
+            android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen" />
+        <activity
+            android:name="com.nativex.videoplayer.VideoActivity"
+            android:configChanges="orientation|screenSize" />
+        <!--______________________________________________________________________-->
+
+
+
+
+        <!--ADXMI components______________________________________________________-->
+        <activity
+            android:name="net.adxmi.android.AdBrowser"
+            android:configChanges="keyboard|keyboardHidden|orientation|screenSize"
+            android:theme="@android:style/Theme.Light.NoTitleBar"/>
+
+        <service
+            android:name="net.adxmi.android.AdService"
+            android:exported="false"/>
+
+        <!-- Component that rewarded ADs needs -->
+        <service
+            android:name="net.adxmi.android.ExpService"
+            android:exported="false"/>
+        <!-- Optional Component -->
+        <receiver android:name="net.adxmi.android.AdReceiver">
+            <intent-filter>
+                <action android:name="android.intent.action.PACKAGE_ADDED" />
+                <data android:scheme="package" />
+            </intent-filter>
+        </receiver>
+        <!--________________________________________________________________________-->
+
+
+
+
+        <!--Adcolony activities __________________________________________-->
+        <activity
+            android:name="com.adcolony.sdk.AdColonyInterstitialActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true" />
+
+        <activity
+            android:name="com.adcolony.sdk.AdColonyAdViewActivity"
+            android:configChanges="keyboardHidden|orientation|screenSize"
+            android:hardwareAccelerated="true" />
+
+        <!--______________________________________________________________-->
+
+    </application>
+
+</manifest>
